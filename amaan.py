@@ -57,8 +57,8 @@ RUN apt-get install -y\
     libfreetype6-dev
 RUN sed -i '/<policy domain="path" rights="none" pattern="@\*"/d' /etc/ImageMagick-6/policy.xml
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && dpkg -i google-chrome-stable_current_amd64.deb; apt-get -fy install && axel https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install -y ./google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb && axel https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_linux64.zip && unzip chromedriver_linux64.zip && chmod +x chromedriver && mv -f chromedriver /usr/bin/ && rm chromedriver_linux64.zip
-RUN wget https://raw.githubusercontent.com/msy1717/logoCollabx/master/sh1vamrun.py
+RUN wget https://raw.githubusercontent.com/msy1717/logoCollabx/master/main.py
 RUN wget https://raw.githubusercontent.com/msy1717/logo-bymrunal/master/requirements.txt
 
 RUN pip3 install -r requirements.txt
-CMD ["python3","sh1vamrun.py"]
+CMD ["python3","main.py"]
