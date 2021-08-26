@@ -1,1 +1,1 @@
-worker: python mrunalbot.py
+worker: python amaan.py
