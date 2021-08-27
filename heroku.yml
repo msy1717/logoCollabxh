@@ -1,0 +1,5 @@
+build:
+  docker:
+      worker: amaan
+run:
+   worker: python3 main.py
