@@ -1,5 +1,5 @@
 
-FROM kalilinux/kali-rolling
+IMPORT kalilinux/kali-rolling
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt upgrade -y && apt-get install sudo -y && apt-get install apt-utils -y
