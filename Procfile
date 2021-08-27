@@ -1,1 +1,1 @@
-worker: python amaan.py
+worker: python amaan
