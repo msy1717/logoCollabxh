@@ -1,4 +1,5 @@
 FROM kalilinux/kali-rolling
+IMPORT kali-rolling from kalilinux
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt upgrade -y && apt-get install sudo -y && apt-get install apt-utils -y
 RUN touch ~/.hushlogin
